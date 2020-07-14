@@ -1,0 +1,181 @@
+body {
+    background-color: #D9E1DF;
+}
+
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fffbf7;
+    z-index: 9999;
+}
+
+.header {
+    height: 80px;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0;
+    display: flex;
+}
+
+.header > * {
+    display: inline-block;
+    justify-content: center;
+    font-size: 16px;
+}
+
+.logo-empresa {
+    width: 20%;
+}
+
+.menu-header {
+    width: 60%;
+    text-align: center;
+    font-weight: 600;
+}
+
+.menu-item {
+    display: inline;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.logo-redessociales {
+    width: 20%;
+    justify-content: space-between;
+    text-align: right;
+}
+
+main {
+    margin-top: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+main img {
+    max-width: 100%;
+}
+
+.all-container {
+    position: relative;
+    max-width: 1000px;
+    width: 100%;
+    border-radius: 6px;
+    overflow: hidden;
+    height: 100%;
+}
+
+.slider-container {
+    display: flex;
+    transform: translate3d(0,0,0);
+    transition: all 600ms;
+    animation-name: autoplay;
+    animation-duration: 6.5s;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+.slide-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    flex-grow: 0;
+    max-width: 100%;
+    width: 1000px;
+    text-align: center;
+}
+
+.pagination {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.pagination-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2p white solid;
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+    overflow: hidden;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: 0 10px;
+    text-align: center;
+    transition: all 300ms;
+}
+
+.pagination-item:hover {
+    transform: scale(2);
+}
+
+.pagination-item img {
+    display: inline-block;
+    max-width: none;
+    height: 100%;
+    transform: scale(1);
+    opacity: 0;
+    transition: all 300ms;
+}
+
+.pagination-item:hover img {
+    opacity: 1;
+    transform: scale(1);
+}
+
+input[id="1"]:checked ~ .slider-container {
+    animation: none;
+    transform: translate3d(0,0,0);
+}
+
+input[id="1"]:checked ~ .pagination .pagination-item[for="1"]{
+    background-color: #fff;
+}
+
+input[id="2"]:checked ~ .slider-container {
+    animation: none;
+    transform: translate3d(calc(-100% * 1),0,0);
+}
+
+input[id="2"]:checked ~ .pagination .pagination-item[for="2"]{
+    background-color: #fff;
+}
+
+input[id="3"]:checked ~ .slider-container {
+    animation: none;
+    transform: translate3d(calc(-100% * 2),0,0);
+}
+
+input[id="3"]:checked ~ .pagination .pagination-item[for="3"]{
+    background-color: #fff;
+}
+
+@keyframes autoplay {
+    33% {
+        transform: translate3d(calc(-100% * 0),0,0);
+    }
+    66% {
+        transform: translate3d(calc(-100% * 1),0,0);
+    }
+    100% {
+        transform: translate3d(calc(-100% * 2),0,0);
+    }
+}
+
+.informacion-consultas {
+    display: grid;
+    grid-template-rows: repeat(2, 2fr);
+    grid-template-columns: repeat(2, 2fr);
+}
