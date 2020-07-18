@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="/styles/main.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet"/>
+    <script src="/scripts/main.js"></script>
     <title>TST Arreglo</title>
 </head>
 <body>
@@ -11,7 +13,7 @@
         <header class="header">
             <section class="logo-empresa">    
                 <a href="/">
-                    <img src="/imagenes/logotst/magnetosyrefacciones.jpg" alt="Logo" width="60px" height="60px"/>
+                    <img src="/imagenes/logotst/tstarreglo.jpg" alt="Logo" />
                 </a>
             </section>
             <nav class="menu-header">
@@ -19,18 +21,19 @@
                     <li class="menu-item">¿Quiénes somos?</li>
                     <li class="menu-item">Servicios</li>
                     <li class="menu-item">
-                        <a>
+                        <a class="logo-item-store" href="/"> 
                             <img src="/imagenes/iconos/store.jpg" alt="tienda" width="35px" height="35px"/>
                         </a>
+                        <a href="/">Tienda</a>
                     </li>
                     <li class="menu-item">Contacto</li>
                 </ul>
             </nav>
             <div class="logo-redessociales">
-                <a class="logo-facebook">
+                <a class="logo-facebook" href="/">
                     <img src="/imagenes/iconos/facebook.jpg" alt="facebook" width="35px" height="35px"/>
                 </a>
-                <a class="logo-instagram">
+                <a class="logo-instagram" href="/">
                     <img src="/imagenes/iconos/instagram.jpg" alt="instagram" width="35px" height="35px"/>
                 </a>
             </div>
@@ -70,27 +73,26 @@
     </main>
     <section class="informacion-consultas">
         <article class="informacion-card">
-            <h3>Garantías</h3>
+            <figure class="imagen-card">
+                <img src="/imagenes/iconos/ubicacion.jpg" alt="Ubicación"/>
+            </figure>
+            <h3>Ubicación de Sucursales</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                 Harum ad accusantium labore error necessitatibus illo vel 
                 assumenda obcaecati laboriosam officiis incidunt provident, 
                 sapiente temporibus dolorem in doloremque sequi vitae rerum?
             </p>
-            <h5>Registrar producto para servicio de garantía</h5>
-            <button>
-                Garantía
-            </button>
-            <h5>Estatus de garantía</h5>
-            <input type="text" placeholder="Numero de folio"/>
+            <h5>Ingresa tu codigo postal</h5>
+            <input type="text" placeholder="Código postal"/>
             <button>
                 Buscar
             </button>
-            <figure class="imagen-card">
-                <img src="/imagenes/gridprincipal/herramientas.jpg"  alt="logo de servicio"/>
-            </figure>
         </article>
         <article class="informacion-card">
-            <h3>Mantenimiento de equipo industrial</h3>
+            <figure class="imagen-card">
+                <img src="/imagenes/iconos/servicios.JPG" alt="Ubicación"/>
+            </figure>
+            <h3>Servicios</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                 Harum ad accusantium labore error necessitatibus illo vel 
                 assumenda obcaecati laboriosam officiis incidunt provident, 
@@ -101,41 +103,20 @@
             <button>
                 Buscar
             </button>
-            <figure class="imagen-card">
-                <img src="/imagenes/gridprincipal/herramientas.jpg"  alt="logo de servicio"/>
-            </figure>
         </article>
         <article class="informacion-card">
-            <h3>Servicio de electrodomesticos</h3>
+            <figure class="imagen-card">
+                <img src="/imagenes/iconos/store.jpg" alt="Tienda" width="80px" height="80px"/>
+            </figure>
+            <h3>Tienda en línea</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                 Harum ad accusantium labore error necessitatibus illo vel 
                 assumenda obcaecati laboriosam officiis incidunt provident, 
                 sapiente temporibus dolorem in doloremque sequi vitae rerum?
             </p>
-            <h5>Revisa el estatus de servicio</h5>
-            <input type="text" placeholder="Numero de folio"/>
-            <button>
-                Buscar
-            </button>
-            <figure class="imagen-card">
-                <img src="/imagenes/gridprincipal/herramientas.jpg"  alt="logo de servicio"/>
-            </figure>
+            <h5>Tenemos gran variedad de...</h5>
         </article>
-        <article class="informacion-card">
-            <h3>Venta de refacciones</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Harum ad accusantium labore error necessitatibus illo vel 
-                assumenda obcaecati laboriosam officiis incidunt provident, 
-                sapiente temporibus dolorem in doloremque sequi vitae rerum?
-            </p>
-            <a>
-                <img src="/imagenes/iconos/store.jpg" alt="tienda" width="35px" height="35px"/>
-            </a>
-            <figure class="imagen-card">
-                <img src="/imagenes/gridprincipal/herramientas.jpg"  alt="logo de servicio"/>
-            </figure>
-        </article>
-        
+                
     </section>
     <footer>
 
