@@ -138,40 +138,26 @@ body {
     
 
 
-.quienessomos-container {
-    width: 80%;
-    display: grid;
-    grid-template-rows: 5;
-    padding: 10%;
-}
 
-.information-card-quienes {
-    width: 100%;
-    text-align: center;
-}
 
-.information-card-quienes  h2 {
-    text-align: left;
-}
-
-.footer-contenedor {
-    display: grid;
-    justify-content: space-between;
-    grid-template-columns: repeat(4, 1fr);
-    grid-column-gap: 10px;
-    width: 100%;
-    height: 80px;
-    text-align: center;
-    font-size: 10px;
-    padding: 10px;
-}
-
-.footer-contacto {
-    text-align: left;
-    list-style: none;
-}
-
-.footer-redessociales li {
-    list-style: none;
-    text-align: center;
-}
+    .footer-contenedor {
+        display: grid;
+        justify-content: space-between;
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 10px;
+        width: 100%;
+        height: 80px;
+        text-align: center;
+        font-size: 10px;
+        padding: 10px;
+    }
+    
+    .footer-contacto {
+        text-align: left;
+        list-style: none;
+    }
+    
+    .footer-redessociales li {
+        list-style: none;
+        text-align: center;
+    }

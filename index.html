@@ -3,41 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/main.css"/>
+    <link rel="stylesheet" href="styles/main.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
     <script src="/scripts/main.js"></script>
     <title>TST Arreglo</title>
 </head>
 <body>
     <section class="fixed-header">
         <header class="header">
-            <section class="logo-empresa">    
-                <a href="/">
-                    <img src="/imagenes/logotst/tstarreglo.jpg" alt="Logo" />
-                </a>
-            </section>
-            <nav class="menu-header">
-                <ul class="menu-lista">
-                    <li class="menu-item"><a href="/quienes_somos/quienes_somos.html">¿Quiénes somos?</a></li>
-                    <li class="menu-item">Servicios</li>
-                    <li class="menu-item">
-                        <a class="logo-item-store" href="/"> 
-                            <img src="/imagenes/iconos/store.jpg" alt="tienda" width="35px" height="35px"/>
-                        </a>
-                        <a href="/">Tienda</a>
+            <div class="logo-empresa">
+               <a href="index.html"><img src="imagenes/logotst/tstarreglo.jpg" alt="Logo" /></a>
+            </div>
+            <nav id="site-nav" class="nav-site">
+                <ul class="nav-item">
+                    <li class="menu-item"><a href="index.html"><i class="fa fa-home site-nav--icon"></i>Inicio</a></li>
+                    <li class="menu-item"><a href="quienes_somos.html"><i class="fa fa-info site-nav--icon"></i>¿Quiénes somos?</a></li>
+                    <li class="menu-item"><a href="#"><i class="fa fa-cogs site-nav--icon"></i>Servicios</a>
+                        <ul>
+                            <li class="menu-item-servicio"><a href="servicio_costo.html">Servicio Costo</a></li>
+                            <li class="menu-item-servicio"><a href="servicio_garantias.html">Servicio de Garantías</a></li>
+                        </ul>
                     </li>
-                    <li class="menu-item">Contacto</li>
+                    <li class="menu-item"><a href="contacto.html"><i class="fa fa-envelope site-nav--icon"></i>Contacto</a></li>
                 </ul>
             </nav>
-            <div class="logo-redessociales">
-                <a class="logo-facebook" href="/">
-                    <img src="/imagenes/iconos/facebook.jpg" alt="facebook" width="35px" height="35px"/>
-                </a>
-                <a class="logo-instagram" href="/">
-                    <img src="/imagenes/iconos/instagram.jpg" alt="instagram" width="35px" height="35px"/>
-                </a>
+            <div id="menu-boton" class="menu-toggle" onclick="cambiarClase()">
+                <div class="burger-icon"> </div>
             </div>
         </header>
+        <script src="scripts/navbar.js"></script>
     </section>
     <main>
         <section class="all-container">
@@ -47,26 +42,26 @@
 
             <div class="slider-container">
                 <div class="slide-item">
-                    <img src="/imagenes/imagenes_main_carrusel/mecanico.jpg"/>
+                    <img src="imagenes/imagenes_main_carrusel/mecanico.jpg"/>
                 </div>
                 <div class="slide-item">
-                    <img src="/imagenes/imagenes_main_carrusel/mesadetrabajo.jpg"/>
+                    <img src="imagenes/imagenes_main_carrusel/mesadetrabajo.jpg"/>
                 </div>
                 <div class="slide-item">
-                    <img src="/imagenes/imagenes_main_carrusel/motor.jpg"/>
+                    <img src="imagenes/imagenes_main_carrusel/motor.jpg"/>
                     <h1>Ven y conocenos!</h1>
                 </div>
             </div>
 
             <div class="pagination">
                 <label class="pagination-item" for="1">
-                    <img src="/imagenes/imagenes_main_carrusel/mecanico.jpg"/>
+                    <img src="imagenes/imagenes_main_carrusel/mecanico.jpg"/>
                 </label>
                 <label class="pagination-item" for="2">
-                    <img src="/imagenes/imagenes_main_carrusel/mesadetrabajo.jpg"/>
+                    <img src="imagenes/imagenes_main_carrusel/mesadetrabajo.jpg"/>
                 </label>
                 <label class="pagination-item" for="3">
-                    <img src="/imagenes/imagenes_main_carrusel/motor.jpg"/>
+                    <img src="imagenes/imagenes_main_carrusel/motor.jpg"/>
                 </label>
             </div>
         </section>
@@ -74,7 +69,7 @@
     <section class="informacion-consultas">
         <article class="informacion-card">
             <figure class="imagen-card">
-                <img src="/imagenes/iconos/ubicacion.jpg" alt="Ubicación"/>
+                <img src="imagenes/iconos/ubicacion.jpg" alt="Ubicación"/>
             </figure>
             <h3>Ubicación de Sucursales</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -90,7 +85,7 @@
         </article>
         <article class="informacion-card">
             <figure class="imagen-card">
-                <img src="/imagenes/iconos/servicios.JPG" alt="Ubicación"/>
+                <img src="imagenes/iconos/servicios.JPG" alt="Ubicación"/>
             </figure>
             <h3>Servicios</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -106,7 +101,7 @@
         </article>
         <article class="informacion-card">
             <figure class="imagen-card">
-                <img src="/imagenes/iconos/store.jpg" alt="Tienda" width="80px" height="80px"/>
+                <img src="imagenes/iconos/store.jpg" alt="Tienda" width="80px" height="80px"/>
             </figure>
             <h3>Tienda en línea</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 

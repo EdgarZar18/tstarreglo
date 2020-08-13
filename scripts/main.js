@@ -7,7 +7,7 @@
  */
 
 var Cliente = function(nombreCompleto, direccionCompleta, ciudadResidencia, numeroTelefono) {
-
+    
 }
 
  var Servicios = function(tipo,falla,estatus,comentario) {

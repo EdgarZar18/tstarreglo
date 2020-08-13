@@ -3,39 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/quienes_somos.css"/>
-    <title>Quienes Somos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+    <link rel="stylesheet" href="styles/quienes_somos.css" />
+    <script src="/scripts/main.js"></script>
+    <title>¿Quiénes somos?</title>
 </head>
 <body>
     <section class="fixed-header">
         <header class="header">
-            <section class="logo-empresa">    
-                <a href="/">
-                    <img src="/imagenes/logotst/tstarreglo.jpg" alt="Logo" />
-                </a>
-            </section>
-            <nav class="menu-header">
-                <ul class="menu-lista">
-                    <li class="menu-item"><a href="/quienes_somos/quienes_somos.html">¿Quiénes somos?</a></li>
-                    <li class="menu-item">Servicios</li>
-                    <li class="menu-item">
-                        <a class="logo-item-store" href="/"> 
-                            <img src="/imagenes/iconos/store.jpg" alt="tienda" width="35px" height="35px"/>
-                        </a>
-                        <a href="/">Tienda</a>
+            <div class="logo-empresa">
+               <a href="index.html"><img src="imagenes/logotst/tstarreglo.jpg" alt="Logo" /></a>
+            </div>
+            <nav id="site-nav" class="nav-site">
+                <ul class="nav-item">
+                    <li class="menu-item"><a href="index.html"><i class="fa fa-home site-nav--icon"></i>Inicio</a></li>
+                    <li class="menu-item"><a href="quienes_somos.html"><i class="fa fa-info site-nav--icon"></i>¿Quiénes somos?</a></li>
+                    <li class="menu-item"><a href="#"><i class="fa fa-cogs site-nav--icon"></i>Servicios</a>
+                        <ul>
+                            <li class="menu-item-servicio"><a href="servicio_costo.html">Servicio Costo</a></li>
+                            <li class="menu-item-servicio"><a href="servicio_garantias.html">Servicio de Garantías</a></li>
+                        </ul>
                     </li>
-                    <li class="menu-item">Contacto</li>
+                    <li class="menu-item"><a href="contacto.html"><i class="fa fa-envelope site-nav--icon"></i>Contacto</a></li>
                 </ul>
             </nav>
-            <div class="logo-redessociales">
-                <a class="logo-facebook" href="/">
-                    <img src="/imagenes/iconos/facebook.jpg" alt="facebook" width="35px" height="35px"/>
-                </a>
-                <a class="logo-instagram" href="/">
-                    <img src="/imagenes/iconos/instagram.jpg" alt="instagram" width="35px" height="35px"/>
-                </a>
+            <div id="menu-boton" class="menu-toggle" onclick="cambiarClase()">
+                <div class="burger-icon"> </div>
             </div>
         </header>
+        <script src="scripts/navbar.js"></script>
     </section>
     <section class="quienessomos-container">
         <article class="information-card-quienes">
