@@ -34,24 +34,34 @@
         <script src="scripts/navbar.js"></script>
     </section>
     <main>
-        <Form id="registro-costo" class="formContainer">
-            <label>Nombres:</label>
-            <input type="text" id="nombres" /> <br><br>
-            <label>Apellidos:</label>
-            <input type="text" id="apellidos" /> <br><br>
-            <label>Correo:</label>
-            <input type="text" id="correo" /> <br><br>
-            <label>Telefono:</label>
-            <input type="text" id="telefono" /> <br><br>
-            <label>Tipo de servicio:</label>
-            <select name="select" id="tipoServicio">
-                <option value="ServicioCosto">Costo</option> 
-                <option value="ServicioGarantia" selected>Garantía</option>
-            </select> <br><br>
-            <label>Descripcion de la falla:</label> <br><br>
-            <textarea id="msg" name="user_message"></textarea> <br><br>
-            <button type="button" onclick="registrarNuevaSolicitud()">Enviar</button>
-        </Form>
+        <section class="formContainer">
+            <Form id="registro-costo">
+                <label>Nombres:</label>
+                <input type="text" id="nombres" placeholder="Ingrese su nombre completo"/> <br><br>
+                <label>Apellidos:</label>
+                <input type="text" id="apellidos" /> <br><br>
+                <label>Correo:</label>
+                <input type="text" id="correo" /> <br><br>
+                <label>Telefono:</label>
+                <input type="text" id="telefono" /> <br><br>
+                <label>Estado:</label>
+                <select name="select" id="seleccionaEstado">
+                    <option value="estado1">Estado 1</option>
+                    <option value="estado2">Estado 2</option>
+                    <option value="estado3">Estado 3</option>
+                    <option value="estado4">Estado 4</option>
+                </select>
+
+                <label>Tipo de servicio:</label>
+                <select name="select" id="tipoServicio">
+                    <option value="ServicioCosto">Costo</option> 
+                    <option value="ServicioGarantia" selected>Garantía</option>
+                </select> <br><br>
+                <label>Descripcion de la falla:</label> <br><br>
+                <textarea id="msg" name="user_message"></textarea> <br><br>
+                <button type="button" onclick="registrarNuevaSolicitud()">Enviar</button>
+            </Form>
+        </section>
         <script src="scripts/servicio_costo.js"></script>
     </main>
     <footer>

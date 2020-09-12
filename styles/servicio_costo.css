@@ -136,21 +136,10 @@ body {
         transform: translateY(3px);
     }
     
-
-.formContainer {
-    justify-content: center;
+form {
+    margin-top: 180px;
     text-align: center;
-    border: solid black 2px;
-    width: 45%;
-    margin-top: 100px;
-}
 
-.formContainer button {
-    margin: 1em;
-}
-
-.formContainer label {
-    text-align: left;
 }
 
     .footer-contenedor {
